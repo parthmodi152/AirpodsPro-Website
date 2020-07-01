@@ -63,7 +63,7 @@ t1
             scrollTrigger: {
                 trigger: 'hero',
                 start: '20% top',
-                end: '25% top',
+                end: '23.9375% top',
                 scrub: true
             }
         }
@@ -75,8 +75,8 @@ t1
             opacity: 0, 
             scrollTrigger: {
                 trigger: 'hero',
-                start: '35% top',
-                end: '40% top',
+                start: '31.8125% top',
+                end: '35.75% top',
                 scrub: true
             }
         }
@@ -102,7 +102,7 @@ t1
             scrollTrigger: {
                 trigger: 'hero',
                 start: '20% top',
-                end: '40% top',
+                end: '35.75% top',
                 scrub: true
             }
         }
@@ -122,8 +122,8 @@ t2
             opacity: 1,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '40% top',
-                end: '45% top',
+                start: '35.75% top',
+                end: '39.6875% top',
                 scrub: true
             }
         }
@@ -135,8 +135,8 @@ t2
             opacity: 0, 
             scrollTrigger: {
                 trigger: 'hero',
-                start: '55% top',
-                end: '60% top',
+                start: '47.5625% top',
+                end: '51.5% top',
                 scrub: true
             }
         }
@@ -149,7 +149,7 @@ t2
             scrollTrigger: {
                 trigger: 'hero',
                 start: 'top top',
-                end: '40% top',
+                end: '35.75% top',
             }
         }
     )
@@ -161,8 +161,8 @@ t2
             translateY: -40,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '40% top',
-                end: '60% top',
+                start: '35.75% top',
+                end: '51.5% top',
                 scrub: true
             }
         }
@@ -181,8 +181,8 @@ t3
             opacity: 1,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '60% top',
-                end: '65% top',
+                start: '51.5% top',
+                end: '55.4375% top',
                 scrub: true
             }
         }
@@ -194,8 +194,8 @@ t3
             opacity: 0, 
             scrollTrigger: {
                 trigger: 'hero',
-                start: '75% top',
-                end: '80% top',
+                start: '63.3125% top',
+                end: '67.25% top',
                 scrub: true
             }
         }
@@ -208,7 +208,7 @@ t3
             scrollTrigger: {
                 trigger: 'hero',
                 start: 'top top',
-                end: '60% top',
+                end: '51.5% top',
             }
         }
     )
@@ -220,15 +220,15 @@ t3
             translateY: -40,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '60% top',
-                end: '80% top',
+                start: '51.5% top',
+                end: '67.25% top',
                 scrub: true
             }
         }
     )
 
 
-// Text 1 Animation
+// Text 4 Animation
 
 let t4 = gsap.timeline()
 
@@ -240,8 +240,8 @@ t4
             opacity: 1,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '80% top',
-                end: '85% top',
+                start: '67.25% top',
+                end: '71.1875% top',
                 scrub: true
             }
         }
@@ -253,9 +253,10 @@ t4
             opacity: 0, 
             scrollTrigger: {
                 trigger: 'hero',
-                start: '95% top',
-                end: '100% top',
-                scrub: true
+                start: '79.0625% top',
+                end: '83% top',
+                scrub: true,
+                markers: true
             }
         }
     )
@@ -267,7 +268,7 @@ t4
             scrollTrigger: {
                 trigger: 'hero',
                 start: 'top top',
-                end: '80% top',
+                end: '67.25% top',
             }
         }
     )
@@ -279,8 +280,8 @@ t4
             translateY: -40,
             scrollTrigger: {
                 trigger: 'hero',
-                start: '80% top',
-                end: '100% top',
+                start: '67.25% top',
+                end: '83% top',
                 scrub: true
             }
         }
@@ -297,8 +298,20 @@ gsap.fromTo(
         scrollTrigger: {
             trigger: 'hero',
             start: '20% top',
-            end: '100% top',
+            end: '83% top',
             scrub: true
         }
     }
 )
+
+gsap.fromTo(bgVideo,{
+    opacity: 1
+},{
+    opacity: 0,
+    scrollTrigger: {
+        trigger: 'hero',
+        start: '80.51% top',
+        end: '83% top',
+        scrub: true
+    }
+})
