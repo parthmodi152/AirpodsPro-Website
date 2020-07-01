@@ -1,0 +1,289 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: black;
+}
+
+/* Main Navigation Bar */
+.nav {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    height: 44px;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    /* height: 50px; */
+}
+
+.navMenu {
+    padding: 0 12px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.navLink {
+    height: 44px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: opacity 200ms ease;
+}
+
+.navLink:hover {
+    opacity: 70%;
+}
+
+.Logo,
+.Search,
+.Bag {
+    padding: 0 10px;
+}
+
+.mobileNavButton {
+    width: 30px;
+    height: 30px;
+    padding: 7px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.mobileButtonLine {
+    width: 60%;
+    height: 1px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 479px) {
+    .navLink {
+        display: none;
+    }
+    .Logo,
+    .Bag,
+    .mobileNavButton {
+        display: flex;
+    }
+
+}
+
+/* Airpods Navigation Bar */
+
+.airpodsNav {
+    width: 100%;
+    height: 52px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color:rgba(29, 29, 31, 0.7);
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.airpodsNavContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 52px;
+}
+
+.appleNavTitle {
+    color: white;
+    font-size: 21px;
+    height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.airpodsNavLink {
+    color: #f5f5f7;
+    font-size: 12px;
+    height: 20px;
+    margin-left: 24px;
+}
+
+.buyButton {
+    padding: 4px 11px;
+    margin-left: 24px;
+    background-color: #0071e3;
+    font-size: 12px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
+@media only screen and (max-width: 479px) {
+    .appleNavTitle{
+        font-size: 19px;
+    }
+
+    .airpodsNavLink{
+        display: none;
+    }
+
+}
+
+
+/* Hero Section */
+
+.hero {
+    position: relative;
+}
+
+.heroTextContainer {
+    max-width: 980px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.heroText {
+    padding-bottom: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.heroHeadline {
+    font-size: 150px;
+    color: #f5f5f7;
+    line-height: 0.667;
+    margin: 0;
+}
+
+.heroSubheadline {
+    color: white;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 1.17;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.heroScrollContainer {
+    height: 500vh;
+    position: relative;
+}
+
+.stickyContainer {
+    max-width: 980px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.heroBulletPoint {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.heroBulletText {
+    position: absolute;
+    font-size: 64px;
+    line-height: 1.06;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+}
+
+/* Scroll Sequence */
+
+.scrollSequence {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 150px;
+    height: 600vh;
+}
+
+.sequenceContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.animationSequence {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.lottieAnimationContainer {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 52px;
+}
+
+/* Lottie */
+/* lottie-player {
+    display: flex;
+    justify-content: center;
+} */
+#bgVideo {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1458px;
+    position: absolute;
+    /* transform: translateY(-100px); */
+}
+
+@media only screen and (max-width: 800px) {
+    .heroHeadline{
+        font-size: 96px;
+    }
+    .heroBulletText{
+        font-size: 48px;
+    }
+    .stickyContainer{
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .heroHeadline{
+        font-size: 62px;
+        line-height: 1.09;
+    }
+    .heroSubheadline{
+        font-size: 17px;
+    }
+    .heroBulletText{
+        font-size: 41px;
+    }
+    .stickyContainer{
+        width: 87.5%;
+    }
+    #bgVideo {
+        max-width: 440px;
+    }
+}
