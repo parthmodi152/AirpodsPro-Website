@@ -175,7 +175,7 @@ body {
 }
 
 .heroScrollContainer {
-    height: 800vh;
+    height: 600vh;
     position: relative;
 }
 
@@ -218,7 +218,7 @@ body {
     top: 0;
     width: 100%;
     margin-top: 150px;
-    height: 900vh;
+    height: 700vh;
 }
 
 .sequenceContainer {
