@@ -1,22 +1,5 @@
 const bgVideo = document.getElementById('bgVideo')
 
-// let scrollProgress = 0
-// let delay = 0
-
-// function updateProgress(progress) {
-//     scrollProgress = progress
-//     delay = (scrollProgress * 100)
-//     bgVideo.seek(delay.toFixed(0)+'%')
-// }
-
-// let st = ScrollTrigger.create({
-//     trigger: '.scrollSequence',
-//     start:'top 150px',
-//     end: '100% 100%',
-//     pin:true,
-//     markers: true,
-//     onUpdate: self => updateProgress(self.progress)
-// })
 gsap.from(
         ['.heroHeadline', '.heroSubheadline', bgVideo], {
         opacity: 0,
@@ -255,8 +238,7 @@ t4
                 trigger: 'hero',
                 start: '79.0625% top',
                 end: '83% top',
-                scrub: true,
-                markers: true
+                scrub: true
             }
         }
     )

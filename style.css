@@ -85,6 +85,8 @@ body {
     top: 0;
     z-index: 999;
     background-color:rgba(29, 29, 31, 0.7);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
     border-bottom: 1px solid #2c2c2c;
 }
 
@@ -173,7 +175,7 @@ body {
 }
 
 .heroScrollContainer {
-    height: 500vh;
+    height: 800vh;
     position: relative;
 }
 
@@ -216,7 +218,7 @@ body {
     top: 0;
     width: 100%;
     margin-top: 150px;
-    height: 600vh;
+    height: 900vh;
 }
 
 .sequenceContainer {
@@ -254,6 +256,7 @@ body {
     margin: 0 auto;
     max-width: 1458px;
     position: absolute;
+    height: 100vh;
     /* transform: translateY(-100px); */
 }
 
@@ -290,9 +293,4 @@ body {
         transform: translateY(-100px);
         max-width: 440px;
     }
-}
-
-.hero2 {
-    width: 100%;
-    height: 300vh;
 }
