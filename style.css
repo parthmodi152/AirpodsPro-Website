@@ -284,6 +284,7 @@ body {
         width: 87.5%;
     }
     #bgVideo {
+        transform: translateY(-100px);
         max-width: 440px;
     }
 }
