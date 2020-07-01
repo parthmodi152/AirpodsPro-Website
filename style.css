@@ -277,6 +277,9 @@ body {
     .heroSubheadline{
         font-size: 17px;
     }
+    .heroBulletPoint{
+        transform: translateY(-100px);
+    }
     .heroBulletText{
         font-size: 41px;
     }
@@ -287,4 +290,9 @@ body {
         transform: translateY(-100px);
         max-width: 440px;
     }
+}
+
+.hero2 {
+    width: 100%;
+    height: 300vh;
 }
